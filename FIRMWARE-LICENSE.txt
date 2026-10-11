@@ -1,0 +1,80 @@
+LYRA CD PLAYER BINARY FIRMWARE LICENSE
+Version 1.0, 2026
+
+Copyright (c) 2026 谷谷哒. All rights reserved.
+
+This license applies to the Lyra CD Player proprietary binary firmware distributed
+by the copyright holder (the "Firmware"). The Firmware is provided in executable
+binary form only. Source code is not licensed or distributed.
+
+1. Limited Permission
+
+Subject to all terms of this license, an individual is granted a personal,
+revocable, non-exclusive, non-transferable, and non-sublicensable permission to:
+
+  a. download one or more copies of the Firmware from the official project
+     repository; and
+  b. flash and run the Firmware on personally owned, compatible Lyra CD Player
+     hardware for personal, non-commercial use.
+
+2. Restrictions
+
+Except where applicable law expressly permits otherwise, you may not:
+
+  a. use the Firmware for any commercial, for-profit, paid-service, rental,
+     resale, manufacturing, or business purpose;
+  b. redistribute, mirror, publish, sublicense, sell, rent, lease, transfer, or
+     otherwise make the Firmware available to any third party;
+  c. modify, adapt, translate, patch, combine, or create derivative works of the
+     Firmware;
+  d. reverse engineer, decompile, disassemble, decrypt, extract, or otherwise
+     attempt to derive source code, algorithms, protocols, keys, or internal
+     implementation details from the Firmware;
+  e. remove, alter, or obscure any copyright, attribution, license, version, or
+     proprietary notice; or
+  f. use the Firmware on hardware other than the explicitly supported Lyra CD
+     Player version identified in the release notes.
+
+3. Ownership
+
+The Firmware is licensed, not sold. The copyright holder retains all rights,
+title, and interest in and to the Firmware that are not expressly granted here.
+No trademark, patent, source-code, documentation, or other intellectual-property
+right is granted by implication, estoppel, or otherwise.
+
+4. Third-Party Components
+
+Third-party components incorporated into or distributed with the Firmware remain
+subject to their respective licenses. Those licenses and notices are listed in
+THIRD_PARTY_NOTICES.txt. To the extent of a conflict, the applicable third-party
+license controls only for that third-party component.
+
+5. No Warranty
+
+THE FIRMWARE IS PROVIDED "AS IS" AND "AS AVAILABLE", WITHOUT WARRANTY OF ANY
+KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, NON-INFRINGEMENT,
+COMPATIBILITY, RELIABILITY, OR ERROR-FREE OPERATION.
+
+6. Limitation of Liability
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE COPYRIGHT HOLDER SHALL NOT
+BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY,
+CONSEQUENTIAL, OR OTHER DAMAGES, INCLUDING DATA LOSS, DEVICE DAMAGE, LOST PROFITS,
+OR BUSINESS INTERRUPTION, ARISING FROM OR RELATED TO THE FIRMWARE OR ITS USE,
+EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+7. Termination
+
+This permission terminates automatically upon any breach of this license. Upon
+termination, all use of the Firmware must cease and all copies in your possession
+or control must be deleted, except where retention is required by law.
+
+8. Contact and Additional Permission
+
+Commercial use, redistribution, integration into another product, or any use not
+expressly permitted above requires prior written permission from the copyright
+holder.
+
+By downloading, copying, flashing, or using the Firmware, you acknowledge that
+you have read and accepted this license.

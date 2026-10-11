@@ -1,0 +1,49 @@
+THIRD-PARTY SOFTWARE NOTICES
+Lyra CD Player Firmware V1.3
+
+This file identifies third-party components incorporated into or used by the
+Lyra CD Player binary firmware. These components remain governed by their own
+licenses. They are not relicensed under the proprietary Lyra CD Player Binary
+Firmware License.
+
+--------------------------------------------------------------------------
+1. ESP-IDF
+--------------------------------------------------------------------------
+
+ESP-IDF is developed by Espressif Systems and is licensed principally under the
+Apache License 2.0, with some components provided under other compatible terms.
+
+Project: https://github.com/espressif/esp-idf
+License: https://github.com/espressif/esp-idf/blob/master/LICENSE
+
+Copyright (c) Espressif Systems (Shanghai) Co., Ltd.
+
+Users should consult the ESP-IDF repository and the license notices accompanying
+individual ESP-IDF components for the complete and controlling terms.
+
+--------------------------------------------------------------------------
+2. BrownMuffin / M11BT222A FUTABA VFD display mapping
+--------------------------------------------------------------------------
+
+The Lyra CD Player FUTABA display mapping contains or is adapted from code from
+the BrownMuffin/M11BT222A project, licensed under the MIT License.
+
+Copyright (c) 2021 BrownMuffin
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
