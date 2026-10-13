@@ -2,20 +2,22 @@
 
 ![Lyra CD Player](assets/lyra-cd-player-cover.png)
 
-Lyra CD Player 是一台以旧式光驱为播放机构、ESP32-S3 为控制核心，并集成功放、耳放、线路输出与复古 VFD 显示的紧凑型 CD 播放器。本仓库仅发布经过实机验证的**闭源二进制固件**、烧录说明与用户手册，不提供程序源代码。
+Lyra CD Player 是一台以旧式光驱为播放机构、ESP32-S3 为控制核心，并集成功放、耳放、线路输出与显示模块的紧凑型 CD 播放器。本仓库提供 VFD 与 OLED 两种显示版本的固件、烧录说明和用户手册。
 
 > 当前稳定版本：**V1.3**
 >
 > 作者：**谷谷哒**
 >
-> 适用硬件：**Lyra CD Player V1.3 / ESP32-S3 / 16 MB Flash / VFD 版本**
+> 适用硬件：**Lyra CD Player V1.3 / ESP32-S3 / 16 MB Flash**
+>
+> 显示版本：**FUTABA VFD** 或 **1.54 英寸 SSD1309 128×64 I²C OLED（默认地址 0x3C）**
 
 ## 主要功能
 
 - CD 播放、暂停、上一曲、下一曲与数字选曲
 - 0～20 级音量调节
 - 内置扬声器、3.5 mm 耳机和线路输出三种输出通道
-- VFD 显示曲目、播放时间、频谱与输出状态
+- VFD 或 1.54 英寸 SSD1309 OLED 显示曲目、播放时间、频谱与输出状态
 - 实体按键与红外遥控器控制
 - ESP32-S3 Wi-Fi 热点及网页控制界面
 - 旧光驱再利用，集成解码、耳放与功放的小型化设计
@@ -29,10 +31,15 @@ Lyra CD Player 是一台以旧式光驱为播放机构、ESP32-S3 为控制核�
 | `Lyra_CD_Player_V1.3_full.bin` | 完整安装镜像，从 `0x0` 烧录；包含 bootloader、分区表和应用固件 |
 | `Lyra_CD_Player_V1.3_app.bin` | 仅应用固件，从 `0x10000` 烧录；用于分区表兼容的 V1.3 设备升级 |
 | `Lyra_CD_Player_V1.3_flash_bundle.zip` | 三个原始 BIN、地址说明、Windows 烧录脚本和许可文件 |
+| `Lyra_CD_Player_V1.3_OLED_1.54_SSD1309_full.bin` | 1.54 英寸 SSD1309 OLED 版本完整镜像，从 `0x0` 烧录 |
+| `Lyra_CD_Player_V1.3_OLED_1.54_SSD1309_app.bin` | 1.54 英寸 SSD1309 OLED 版本应用固件，从 `0x10000` 烧录 |
+| `SHA256SUMS_OLED.txt` | OLED 版本固件完整性校验值 |
 | `Lyra_CD_Player_User_Manual_V1.3.pdf` | 8 页中文用户说明 |
 | `SHA256SUMS.txt` | 下载文件完整性校验值 |
 
-直接下载：[完整固件](https://github.com/GGD-create/Lyra-CD-Player/releases/latest/download/Lyra_CD_Player_V1.3_full.bin) · [应用固件](https://github.com/GGD-create/Lyra-CD-Player/releases/latest/download/Lyra_CD_Player_V1.3_app.bin) · [烧录包](https://github.com/GGD-create/Lyra-CD-Player/releases/latest/download/Lyra_CD_Player_V1.3_flash_bundle.zip) · [用户手册](https://github.com/GGD-create/Lyra-CD-Player/releases/latest/download/Lyra_CD_Player_User_Manual_V1.3.pdf)
+直接下载：VFD [完整固件](https://github.com/GGD-create/Lyra-CD-Player/releases/latest/download/Lyra_CD_Player_V1.3_full.bin) / [应用固件](https://github.com/GGD-create/Lyra-CD-Player/releases/latest/download/Lyra_CD_Player_V1.3_app.bin) · OLED [完整固件](https://github.com/GGD-create/Lyra-CD-Player/releases/latest/download/Lyra_CD_Player_V1.3_OLED_1.54_SSD1309_full.bin) / [应用固件](https://github.com/GGD-create/Lyra-CD-Player/releases/latest/download/Lyra_CD_Player_V1.3_OLED_1.54_SSD1309_app.bin) · [烧录包](https://github.com/GGD-create/Lyra-CD-Player/releases/latest/download/Lyra_CD_Player_V1.3_flash_bundle.zip) · [用户手册](https://github.com/GGD-create/Lyra-CD-Player/releases/latest/download/Lyra_CD_Player_User_Manual_V1.3.pdf)
+
+> **请勿混刷显示版本。** OLED 固件仅适用于 **1.54 英寸 SSD1309、128×64、I²C 接口**的屏幕模块，默认从机地址为 `0x3C`。VFD 机器请继续使用原有 VFD 固件。
 
 ## 烧录前准备
 
@@ -116,7 +123,7 @@ flash_app_only.bat COM5
 
 ## 许可与第三方声明
 
-本仓库发布的是闭源二进制固件，不属于 OSI 定义的开源软件。固件仅授权个人、非商业下载和烧录；禁止商业使用、再分发、修改、反编译或逆向工程，但适用法律明确允许的情形除外。详情见 [FIRMWARE-LICENSE.txt](FIRMWARE-LICENSE.txt)。
+固件的使用与分发条件详见 [FIRMWARE-LICENSE.txt](FIRMWARE-LICENSE.txt)。
 
 固件中包含或改编自第三方许可组件。第三方组件仍适用其各自许可，不受本项目闭源条款覆盖。详情见 [THIRD_PARTY_NOTICES.txt](THIRD_PARTY_NOTICES.txt)。
 
